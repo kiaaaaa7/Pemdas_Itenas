@@ -10,7 +10,7 @@ print("DataFrame Awal:")
 print(df)
 print("\n" + "="*50 + "\n")
 
-# PERTANYAAN 1: Peningkatan gaji 5% dengan loop for dan lambda
+#Peningkatan gaji 5% dengan loop for dan lambda
 print("Meningkatkan gaji sebesar 5% menggunakan loop for dan lambda")
 print("-" * 60)
 
@@ -28,7 +28,7 @@ for index, row in df.iterrows():
 print("\nHasil setelah peningkatan 5%:")
 print(df)
 
-# PERTANYAAN 2: Ringkasan perubahan
+#Ringkasan perubahan
 print("\n" + "="*50)
 print("Ringkasan Perubahan Setelah Peningkatan 5%")
 print("-" * 50)
@@ -49,7 +49,7 @@ print(f"\nTotal gaji awal: Rp {total_awal:,}")
 print(f"Total setelah +5%: Rp {total_setelah_5persen:,.2f}")
 print(f"Selisih: Rp {total_setelah_5persen - total_awal:,.2f}")
 
-# PERTANYAAN 3: Peningkatan tambahan 2% untuk usia > 30
+#Peningkatan tambahan 2% untuk usia > 30
 print("\n" + "="*50)
 print("Peningkatan tambahan 2% untuk usia > 30 tahun")
 print("-" * 50)
@@ -66,7 +66,7 @@ for index, row in df.iterrows():
         print(f"  {row['Nama']} (usia {row['Usia']} > 30): +2% tambahan")
         print(f"    Gaji: {gaji_sebelum:.2f} → {gaji_setelah:.2f}")
 
-# PERTANYAAN 4: Tampilkan DataFrame akhir dan ringkasan
+#Tampilkan DataFrame akhir dan ringkasan
 print("\n" + "="*50)
 print("DataFrame Final dan Ringkasan Hasil")
 print("-" * 50)
@@ -77,7 +77,6 @@ print(df.to_string(index=False))
 print("\nRINGKASAN AKHIR:")
 print("="*40)
 
-# Hitung semua perubahan
 print("\nDetail Karyawan:")
 for i in range(len(df)):
     nama = df.at[i, 'Nama']
